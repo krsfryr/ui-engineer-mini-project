@@ -1,7 +1,11 @@
-<h1>The Rick and Morty</h1>
+<div class="header">
+    <h1 class="text-center">The Rick and Morty</h1>
+    <img class="header-img" src="../assets/images/hero-image.svg" alt="Rick & Morty">
+</div>
+<div class="nav-tabs">
+    <a routerLink="/characters" [queryParams]="{ fromPage : characterPage, nameSearch : characterNameSearch }" [ngClass]="episodeGuideRLA.isActive ? '' : 'active'" class="nav-link">Characters</a>
 
-<a routerLink="/characters" [queryParams]="{ fromPage : characterPage, nameSearch : characterNameSearch }" class="nav-link">Characters</a>
-
-<a routerLink="/episodes" class="nav-link">Episode Guide</a>
+    <a routerLink="/episodes" routerLinkActive="active" #episodeGuideRLA="routerLinkActive" class="nav-link">Episode Guide</a>
+</div>
 
 <router-outlet></router-outlet>

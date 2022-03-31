@@ -1,0 +1,21 @@
+.btn{
+    text-align: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 0;
+    padding: 1.2rem 7.5rem;
+    font-size: 1.8rem;
+    line-height: 1.1;
+    border-radius: .6rem;
+    user-select: none;
+}
+
+.btn-default {
+    color: $const-white;
+    background: $brand-primary;
+
+    &:hover {
+        background: darken($brand-primary, 3%);
+    }
+}

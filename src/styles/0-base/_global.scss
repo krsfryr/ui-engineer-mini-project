@@ -1,0 +1,44 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font: 400 1.6rem/1.8rem 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    color: $text-default;
+    background-color: $body-background;
+    margin: 0;
+    padding-bottom: 10rem;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        color: $brand-primary;
+    }
+}
+
+
+.pagination {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+    font-size: 1.4rem;
+
+    .page {
+        padding: 0.4rem 1rem;
+        margin-bottom: 0.6rem;
+        cursor: pointer;
+
+        &.active {
+            color: $brand-primary;
+        }
+
+        &:hover {
+            color: $brand-primary;
+
+        }
+    }
+}

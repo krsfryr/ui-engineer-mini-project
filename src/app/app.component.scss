@@ -1,0 +1,76 @@
+@import '../styles/0-base/theme';
+@import '../styles/0-base/mixins';
+
+.header {
+    min-height: 15rem;
+    background: $const-white;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    @include sm {
+        min-height: 19rem;
+    }
+
+    @include md {
+        min-height: 23rem;
+    }
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.75;
+    margin: 4rem 0;
+    z-index: 1;
+
+    @include sm {
+        font-size: 3.6rem;
+    }
+
+    @include md {
+        font-size: 6.4rem;
+    }
+}
+
+.header-img {
+    position: absolute;
+    bottom: 0;
+    height: calc(100% - 1.5rem);
+    width: auto;
+}
+
+.nav-tabs {
+    display: grid;
+    gap: 4.5rem;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    justify-content: center;
+    padding: 5.6rem 1.5rem 3.6rem;
+
+    .nav-link {
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+        color: $text-secondary;
+
+        &:hover {
+            color: $brand-primary;
+        }
+
+        &.active {
+            color: $text-primary;
+        }
+
+        @include sm {
+            font-size: 2rem;
+        }
+
+        @include md {
+            font-size: 3.2rem;
+        }
+    }
+}

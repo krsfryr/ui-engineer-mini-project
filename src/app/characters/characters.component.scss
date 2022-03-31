@@ -1,0 +1,32 @@
+@import '../../styles/0-base/theme';
+@import '../../styles/0-base/mixins';
+
+.input-group {
+    display: grid;
+    grid-auto-flow: initial;
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+    margin-bottom: 4rem;
+
+    @include xs {
+        grid-auto-flow: column;
+    }
+}
+
+.form-control {
+    font-size: 1.6rem;
+    padding: 1rem 1.6rem;
+    border-radius: .6rem;
+    border: .1rem solid transparent;
+
+    &::placeholder {
+        color: #7C828D;
+    }
+
+    &:focus {
+        border-color: $brand-primary;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px darken($brand-primary, 40%);
+        box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px darken($brand-primary, 40%);
+    }
+}
