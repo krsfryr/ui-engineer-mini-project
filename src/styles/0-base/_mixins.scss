@@ -1,0 +1,24 @@
+// Media Queries
+@mixin xs {
+    @media (min-width: 515px) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}

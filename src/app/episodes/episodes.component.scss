@@ -1,0 +1,9 @@
+.table {
+    >tbody>tr>td,
+    >tbody>tr>th {
+
+        &:last-of-type {
+            text-align: right;
+        }
+    }
+}
